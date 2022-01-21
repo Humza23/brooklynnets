@@ -81,6 +81,8 @@ a {
 .rosterImg {
   width: 18rem;
   height: 10rem;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .card.border-secondary.mb {
@@ -98,4 +100,17 @@ a {
   font-size: 1.25rem;
   font-weight: bolder;
   color: white;
+}
+
+.statBox{
+  margin: 0 auto;
+  width: 12.5%;
+  font-size: 1.2rem;
+}
+
+.details {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

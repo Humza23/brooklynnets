@@ -16,12 +16,6 @@ const Navbar = () => {
     <li>
       <Link to="/playerstats">Player Stats</Link>
     </li>
-    <li>
-      <Link to="/playerpages">Player Pages</Link>
-    </li>
-    <li>
-      <Link to="/schedule">Schedule</Link>
-    </li>
 
   </div>
     </div>

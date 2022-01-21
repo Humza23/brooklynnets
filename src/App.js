@@ -7,7 +7,6 @@ import HomeCarousel from './components/HomeCarousel'
 import Roster from './components/Roster';
 import PlayerStats from './components/PlayerStats';
 import PlayerPages from './components/PlayerPages';
-import Schedule from './components/Schedule';
 import axios from 'axios'
 
 
@@ -42,8 +41,7 @@ function App() {
       <Route path='/' element={<HomeCarousel />}/>
       <Route path='/roster' element={<Roster rosterData={rosterData} />} />
       <Route path='/playerstats' element={<PlayerStats />}/>
-      <Route path='/playerpages' element={<PlayerPages />}/>
-      <Route path='/schedule' element={<Schedule />}/>
+      <Route path='/roster/:playerId' element={<PlayerPages rosterData={rosterData}/>}/>
       
     </Routes>
 
