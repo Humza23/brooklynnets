@@ -47,20 +47,21 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-  width: 75%;
+  width: 50%;
   background-color: black;
+  padding-bottom: .1rem;
 }
 
 li {
   list-style-type: none;
-  color: white;
 }
 a {
   color: white;
+  font-size: .85rem;
 }
 
 .carousel {
-  border-top: 0.1rem solid white;
+  border-top: 0.05rem solid white;
   width: 50%;
 }
 
