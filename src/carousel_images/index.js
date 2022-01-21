@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import teampic1 from './teampic1.jpeg'
 import teampic2 from './teampic2.jpeg'
 import teampic3 from './teampic3.jpeg'
