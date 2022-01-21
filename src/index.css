@@ -15,5 +15,12 @@ code {
 }
 
 html {
-  background-color: black
+  background-color: black;
+  height: 100vh;
+}
+
+* {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: bold;
+
 }

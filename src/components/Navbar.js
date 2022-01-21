@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom'
 
-
 const Navbar = () => {
   return(
+    <div>
+
   <div id='navbar'>
     <li>
       <Link to="/roster">Roster</Link>
@@ -22,6 +23,15 @@ const Navbar = () => {
     </li>
 
   </div>
+  <hr
+        style={{
+            marginTop: '.2rem',
+            color: 'grey',
+            backgroundColor: 'grey',
+            height: 3
+        }}
+    />
+    </div>
   );
 };
 
