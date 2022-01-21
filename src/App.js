@@ -7,7 +7,6 @@ import HomeCarousel from './components/HomeCarousel'
 import Roster from './components/Roster';
 import PlayerStats from './components/PlayerStats';
 import PlayerPages from './components/PlayerPages';
-import Injuries from './components/Injuries';
 import Schedule from './components/Schedule';
 import axios from 'axios'
 
@@ -23,6 +22,7 @@ function App() {
       axios
         .get(rosterURL)
         .then((res) => {
+          console.log(res.data.t.pl);
           setRosterData(res.data.t.pl);
         })
         .catch((err) => {
@@ -44,7 +44,6 @@ function App() {
       <Route path='/playerstats' element={<PlayerStats />}/>
       <Route path='/playerpages' element={<PlayerPages />}/>
       <Route path='/schedule' element={<Schedule />}/>
-      <Route path='/injuries' element={<Injuries />}/>
       
     </Routes>
 

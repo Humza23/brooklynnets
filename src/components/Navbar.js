@@ -8,6 +8,9 @@ const Navbar = () => {
 
   <div id='navbar'>
     <li>
+      <Link to="/">Home</Link>
+    </li>
+    <li>
       <Link to="/roster">Roster</Link>
     </li>
     <li>
@@ -19,19 +22,8 @@ const Navbar = () => {
     <li>
       <Link to="/schedule">Schedule</Link>
     </li>
-    <li>
-      <Link to="/injuries">Injuries</Link>
-    </li>
 
   </div>
-  <hr
-        style={{
-            marginTop: '.2rem',
-            color: 'grey',
-            backgroundColor: 'grey',
-            height: 3
-        }}
-    />
     </div>
   );
 };
