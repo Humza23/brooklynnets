@@ -68,3 +68,32 @@ a {
 .slide img{
   height: 65vh;
 }
+
+.rosterGrid {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.rosterImg{
+  width: 18rem;
+  height: 10rem
+}
+
+.card.border-dark.mb {
+  margin-bottom: 1rem !important
+}
+
+.rosterGridName{
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.rosterGridNum{
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
