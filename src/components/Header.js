@@ -7,7 +7,6 @@ const Header = () => {
         <img id='banner' src={bkbanner} alt="Brooklyn Nets"/>
     </div>
   
-  
   );
 };
 
