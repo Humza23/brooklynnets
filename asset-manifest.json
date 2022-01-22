@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/brooklynnets/static/css/main.a8aa03f3.css",
+    "main.js": "/brooklynnets/static/js/main.69baefa7.js",
+    "static/media/teampic4.jpeg": "/brooklynnets/static/media/teampic4.70761260df0f6fa327c0.jpeg",
+    "static/media/teampic5.jpeg": "/brooklynnets/static/media/teampic5.570bf711673f70afe7fd.jpeg",
+    "static/media/teampic1.jpeg": "/brooklynnets/static/media/teampic1.957b1325b1d2f280ccfb.jpeg",
+    "static/media/teampic3.jpeg": "/brooklynnets/static/media/teampic3.35e63e6cfc7298cf974e.jpeg",
+    "static/media/bkbanner.jpeg": "/brooklynnets/static/media/bkbanner.f324096a799554df3061.jpeg",
+    "static/media/teampic2.jpeg": "/brooklynnets/static/media/teampic2.52a2765f3f36d718a81d.jpeg",
+    "index.html": "/brooklynnets/index.html",
+    "main.a8aa03f3.css.map": "/brooklynnets/static/css/main.a8aa03f3.css.map",
+    "main.69baefa7.js.map": "/brooklynnets/static/js/main.69baefa7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8aa03f3.css",
+    "static/js/main.69baefa7.js"
+  ]
+}
