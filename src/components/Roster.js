@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const Roster = (props) => {
     const {rosterData} = props
 
-  console.log('rs', rosterData);
   return(
     <div className='rosterGrid'>
         {rosterData.map((player) => (

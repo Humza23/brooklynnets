@@ -1,25 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import DataTable from 'react-data-table-component';
-import axios from 'axios'
 
 const PlayerStats = (props) => {
 
   const {teamStats} = props
-  // const [teamStats, setTeamStats] = useState([]);
-  
-  // const teamStatsURL = "https://data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/nets/player_averages_02.json"
-
-  // useEffect(() => {
-  //     axios
-  //       .get(teamStatsURL)
-  //       .then((res) => {
-  //         console.log('team', res.data.tpsts.pl);
-  //         setTeamStats(res.data.tpsts.pl);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   }, []);
 
     const totals = teamStats.map((stat) => {
       return (
@@ -36,8 +20,6 @@ const PlayerStats = (props) => {
         
       )
     })
-
-    console.log('TOTALS', totals);
 
 
   const columns = [
