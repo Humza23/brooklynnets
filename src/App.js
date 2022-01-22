@@ -74,17 +74,17 @@ function App() {
           <Navbar />
 
           <Routes>
-            <Route path="/" element={<HomeCarousel />} />
+            <Route path="/brooklynnets" element={<HomeCarousel />} />
             <Route
-              path="/roster"
+              path="/brooklynnets/roster"
               element={<Roster rosterData={rosterData} />}
             />
             <Route
-              path="/playerstats"
+              path="/brooklynnets/playerstats"
               element={<PlayerStats teamStats={teamStats} />}
             />
             <Route
-              path="/roster/:playerId"
+              path="/brooklynnets/roster/:playerId"
               element={
                 <PlayerPages
                   playerStats={playerStats}

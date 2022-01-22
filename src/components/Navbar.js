@@ -8,13 +8,13 @@ const Navbar = () => {
 
   <div id='navbar'>
     <li>
-      <Link to="/">Home</Link>
+      <Link to="/brooklynnets">Home</Link>
     </li>
     <li>
-      <Link to="/roster">Roster</Link>
+      <Link to="/brooklynnets/roster">Roster</Link>
     </li>
     <li>
-      <Link to="/playerstats">Player Stats</Link>
+      <Link to="/brooklynnets/playerstats">Player Stats</Link>
     </li>
 
   </div>
