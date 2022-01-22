@@ -7,19 +7,28 @@ import HomeCarousel from './components/HomeCarousel'
 import Roster from './components/Roster';
 import PlayerStats from './components/PlayerStats';
 import PlayerPages from './components/PlayerPages';
+import LoadingPage from './components/LoadingPage';
 import axios from 'axios'
 
 
 
 function App() {
-
+  const [loading, setLoading] = useState(false)
   const [rosterData, setRosterData] = useState([])
   const [teamStats, setTeamStats] = useState([]);
-  const rosterURL = "https://data.nba.com/data/5s/v2015/json/mobile_teams/nba/2021/teams/nets_roster.json"
-
-
   const [playerStats, setPlayerStats] = useState([]);
+  
+  const rosterURL = "https://data.nba.com/data/5s/v2015/json/mobile_teams/nba/2021/teams/nets_roster.json"
   const statsURL = `https://data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/nets/player_averages_02.json`
+  const teamStatsURL = "https://data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/nets/player_averages_02.json"
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
 
   useEffect(() => {
     axios
@@ -31,7 +40,7 @@ function App() {
         console.log(err);
       });
   }, []);
-  
+
   
   useEffect(() => {
       axios
@@ -46,10 +55,7 @@ function App() {
     }, []);
 
 
-
-
   
-  const teamStatsURL = "https://data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/nets/player_averages_02.json"
 
   useEffect(() => {
       axios
@@ -65,6 +71,12 @@ function App() {
 
 
   return (
+    <div>
+            {loading ?
+      <div>
+        <LoadingPage />
+      </div>
+    :
     <div className="App">
       <Header/>
       <Navbar/>
@@ -77,7 +89,8 @@ function App() {
       <Route path='/roster/:playerId' element={<PlayerPages playerStats={playerStats} rosterData={rosterData}/>}/>
       
     </Routes>
-
+    </div>
+}
     </div>
   );
 }

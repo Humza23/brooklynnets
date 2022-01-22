@@ -49,7 +49,7 @@
   justify-content: space-evenly;
   width: 50%;
   background-color: black;
-  padding-bottom: .1rem;
+  padding-bottom: 0.1rem;
 }
 
 li {
@@ -57,7 +57,7 @@ li {
 }
 a {
   color: white;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .carousel {
@@ -102,7 +102,7 @@ a {
   color: white;
 }
 
-.statBox{
+.statBox {
   margin: 0 auto;
   width: 12.5%;
   font-size: 1.2rem;
@@ -113,4 +113,75 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1440px) {
+  #banner {
+    width: 100vw;
+    height: 15vh;
+  }
+  a {
+    color: white;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    color: white;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slide img {
+    height: 60vh;
+  }
+
+  .card.border-secondary.mb {
+    width: 40vw !important;
+    height: 35vh !important;
+  }
+
+  .card.border-secondary.mb img {
+    width: 10rem !important;
+    height: 7rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card.border-secondary.mb img {
+    width: 7.5rem !important;
+    height: 7rem !important;
+  }
+}
+
+.loadingpage {
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 60%;
+  height: 50%;
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
