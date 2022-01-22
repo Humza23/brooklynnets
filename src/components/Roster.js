@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link, matchPath, useMatch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Roster = (props) => {
     const {rosterData} = props
 
-
-
+  console.log('rs', rosterData);
   return(
     <div className='rosterGrid'>
         {rosterData.map((player) => (
